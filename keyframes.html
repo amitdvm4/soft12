@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>keyframes</title>
+	<style type="text/css">
+		.block{
+			border:2px;
+			width:250px;
+			height: 200px;
+			text-align:center;
+			background-color: grey;
+			font-size:30px;
+			border-radius:20px;
+			
+		
+			
+			animation:blockstyles 3s ;
+			right:0;
+			bottom:10px;
+
+
+		}
+		@keyframes blockstyles{
+			25%{
+				background:green;
+				right:10px;
+
+				position:absolute;
+				
+				
+				
+			}
+			35%{
+				background:blue;
+				right:20px;
+				top:10px
+				}
+			45%{
+				background:red;
+				bottom:20px;
+				left:0px;
+				transform:rotate(160deg);
+			
+			}
+			65%{
+				background:grey; 
+				right:0px;
+				top:0px;
+				transform:rotate(60deg);
+			}
+			85%{
+				background:pink;
+				left:10px;
+				bottom:0px;
+				transform:rotate(360deg);
+			
+			}
+			95%{
+				background:yellow;
+				
+				transform:rotate(260deg);
+			}
+			}
+			
+			
+			
+			
+		</style>
+</head>
+
+<body>
+<div class="block">
+	content
+</div>
+
+</body>
+</html>

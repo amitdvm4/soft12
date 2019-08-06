@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> demonstrating sampls classes</title>
+	<script type="text/javascript">
+	function classname(uname,uage){
+		this.schoolname="abc";
+		this.name=uname;
+		this.age=uage;
+		this.displaydata=function(){
+			console.log("name is"+this.name);
+			console.log("age is"+this.age);
+
+		}
+
+	}	
+	var std1=new classname('teena',20);
+	std1.displaydata();
+	var std2=new classname('tee',26);
+	console.log(std1);
+	console.log(std2);
+
+</script>
+</head>
+<body>
+
+</body>
+</html>

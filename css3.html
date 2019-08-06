@@ -1,0 +1,22 @@
+var readUserData=function(){
+	var userData={};
+	userData.name=document.querySelector("#uname").value;
+	if(userData.name==''){
+		document.querySelector("#name-err").style.display='block';
+	
+	}
+	userData.age=document.querySelector("#uage").value;
+	if(userData.age==''){
+		document.querySelector("#age-err").style.display='block';
+	}
+	userData.accpwd=document.querySelector("#uaccpwd").value;
+	
+	var countryElement=document.querySelector("#ucountry");
+	var index=countryElement.selectedIndex;
+	var selectedOption=countryElement.options[index];
+	userData.country=selectedOption.text
+	userData.gender=selectedOption.text
+	console.log("userdata");
+	};
+
+
