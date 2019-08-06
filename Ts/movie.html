@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <style>
+           #img{
+               width:300px;
+               height:200px;
+            }
+        </style>
+        <script>
+            var cit=["select your city","mumbai","pune"];
+            var cin=["select a cinema","skcinema","royalcinema"];
+            var mov=["select a movie","student of the year","kalank"];
+            var data=[
+                {moviename:"kalank",Timing:"12:00pm,3:30pm",photo:"https://www.jagranimages.com/images/17_04_2019-kalankmoviereviewws_19140775.jpg"},
+                {moviename:"student of the year",Timing:"2:00,5:00pm",photo:"https://images.jansatta.com/2019/05/student-of-the-year-2-3-620x400.jpg?w=680"},
+            ]
+            var cls=["select a class","Gold1","midle1"];
+            var data=[
+                {selectcls:"Gold1",price:"300"},
+                {selectcls:"midle1",price:"200"}
+            ]
+            function bodyload(){
+                var cit=document.getElementById("cit");
+                for(var i=0;i<city.lenght; i++){
+                    var opt=document.crateElement("option");
+                    opt.text=
+                }
+            }
+        </script>
+    </head>
+    <body onload="bodyload()">
+        <div class="container">
+            <h1>Movie Ticket Booking</h1>
+            <div class="form-group">
+                <label>select your city</label>
+                <select onchange="" id="cit" class="control">
+
+                </select>
+            </div>
+            <div class="form-group">
+                <label>select a cinema</label>
+                <select id="cin" class="form-control">
+
+                </select>
+            </div>
+            <div class="form-group">
+                <label>select a movie</label>
+                <select id="mov" class="form-control">
+
+                </select>
+            </div>
+            <div class="form-group">
+                <label>show Timing</label>
+                <select id="time" class="form-control">
+
+                </select>
+            </div>
+            <div class="form-group">
+                <label>select a class</label>
+                <select id="cls" class="form-control">
+
+                </select>
+            </div>
+            <div class="form-group">
+                <label>No.of seats</label>
+                <select id="seat" class="form-control">
+                    </select>
+            </div>
+            <div>
+                <button class="btn btn-danger">Book Now</button>
+            </div>
+            <div>
+                    <img id="img" class="img-thumbnail">
+            </div>
+            <div class="card">
+                    <div class="card-header form-group">
+                    <label>Booking Details</label>
+                    </div>
+                    <div class="card-body">
+                        <dl>
+                            <dt>select city:
+                                <dd id="lblcity"></dd>
+                            </dt>
+                            <dt>select  cinema:
+                                <dd id="cinema"></dd>
+                            </dt>
+                            <dt>select Movie:
+                            <dd id="movie"></dd>
+                        </dt>
+                        <dt>timing:
+                            <dd id="time"></dd>
+                        </dt>
+                        <dt>class:
+                            <dd id="cls"></dd>
+                        </dt>
+                        <dt>seats:
+                            <dd id="set"></dd>
+                        </dt>
+                        </dl>
+                    </div>
+                    </div>
+                    <div class="card-footer">
+                        <button class="btn btn-primary">ok</button>
+                    </div>
+        </div>
+        
+    </body>
+</html>
